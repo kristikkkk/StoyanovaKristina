@@ -15,17 +15,17 @@
     <main>
         <form>
             <section class="new-task-form">
-            <label for="new-task" class="form-label">Новая задача</label>
-            <div class="input-row">
-                <input type="text" id="new-task" placeholder="Название задачи...">
-                <button type="button" class="add-task-btn">+ Добавить</button>
-            </div>
-        </section>
+                <label for="new-task" class="form-label">Новая задача</label>
+                <div class="input-row">
+                    <input type="text" id="new-task" placeholder="Название задачи...">
+                    <button type="button" class="add-task-btn">+ Добавить</button>
+                </div>
+            </section>
         </form>
         <section class="tasks-wrapper">
             <ul class="task-columns">
                 <li class="task-category backlog">
-                    <button type="button" class="category-btn backlog-btn">Бэклог</button>
+                    <h2 class="category-title">Бэклог</h2>
                     <div class="task-items-container">
                         <div class="single-task">Выучить JS</div>
                         <div class="single-task">Выучить React</div>
@@ -33,21 +33,21 @@
                     </div>
                 </li>
                 <li class="task-category in-progress">
-                    <button type="button" class="category-btn in-progress-btn">В процессе</button>
+                    <h2 class="category-title">В процессе</h2>
                     <div class="task-items-container">
                         <div class="single-task">Выпить смузи</div>
                         <div class="single-task">Попить воды</div>
                     </div>
                 </li>
                 <li class="task-category done">
-                    <button type="button" class="category-btn done-btn">Готово</button>
+                    <h2 class="category-title">Готово</h2>
                     <div class="task-items-container">
                         <div class="single-task">Позвонить маме</div>
                         <div class="single-task">Погладить кота</div>
                     </div>
                 </li>
                 <li class="task-category trash">
-                    <button type="button" class="category-btn trash-btn">Корзина</button>
+                    <h2 class="category-title">Корзина</h2>
                     <div class="task-items-container">
                         <div class="single-task">Сходить погулять</div>
                         <div class="single-task">Прочитать Войну и Мир</div>
@@ -61,3 +61,4 @@
     </main>
 </body>
 </html>
+
