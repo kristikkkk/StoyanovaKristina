@@ -1,64 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>Стоянова Кристина Владимировна</title>
     <link rel="stylesheet" href="style/style.css">
-    <meta charset="UTF-8">
 </head>
-<body>
-    <header class="app-header">
-        <h1>Список задач</h1>
-    </header>
-    <main>
+
+<header class="page-header">
+    <h1 class="page-header-title">Список задач</h1>
+</header>
+
+<main class="page-main">
+    <section class="task-form">
         <form>
-            <section class="new-task-form">
-                <label for="new-task" class="form-label">Новая задача</label>
-                <div class="input-row">
-                    <input type="text" id="new-task" placeholder="Название задачи...">
-                    <button type="button" class="add-task-btn">+ Добавить</button>
-                </div>
+            <h2>Новая задача</h2>
+            <section class="task-form">
+                <input type ="text" class="task-input" placeholder="Название задачи...">
+                <button type="button" class="task-add-button">+ Добавить</button>
             </section>
         </form>
-        <section class="tasks-wrapper">
-            <ul class="task-columns">
-                <li class="task-category backlog">
-                    <h2 class="category-title">Бэклог</h2>
-                    <div class="task-items-container">
-                        <div class="single-task">Выучить JS</div>
-                        <div class="single-task">Выучить React</div>
-                        <div class="single-task">Сделать домашку</div>
-                    </div>
-                </li>
-                <li class="task-category in-progress">
-                    <h2 class="category-title">В процессе</h2>
-                    <div class="task-items-container">
-                        <div class="single-task">Выпить смузи</div>
-                        <div class="single-task">Попить воды</div>
-                    </div>
-                </li>
-                <li class="task-category done">
-                    <h2 class="category-title">Готово</h2>
-                    <div class="task-items-container">
-                        <div class="single-task">Позвонить маме</div>
-                        <div class="single-task">Погладить кота</div>
-                    </div>
-                </li>
-                <li class="task-category trash">
-                    <h2 class="category-title">Корзина</h2>
-                    <div class="task-items-container">
-                        <div class="single-task">Сходить погулять</div>
-                        <div class="single-task">Прочитать Войну и Мир</div>
-                        <div class="clear-section">
-                            <button type="button" class="clear-btn">✕ Очистить</button>
-                        </div>
-                    </div>
-                </li>
+    </section>
+
+    <section class="tasks-board">
+        <section class="task-container backlog">
+            <h3>Бэклог</h3>
+            <ul class="task-list">
+                <li class="task-list-element">Выучить JS</li>
+                <li class="task-list-element">Выучить React</li>
+                <li class="task-list-element">Выучить Домашку</li>
             </ul>
         </section>
-    </main>
-</body>
-</html>
 
+        <section class="task-container in-progress">
+            <h3>В процессе</h3>
+            <ul class="task-list">
+                <li class="task-list-element">Выпить смузи</li>
+                <li class="task-list-element">Попить воды</li>
+            </ul>
+        </section>
+
+        <section class="task-container done">
+            <h3>Готово</h3>
+            <ul class="task-list">
+                <li class="task-list-element">Позвонить маме</li>
+                <li class="task-list-element">Погладить кота</li>
+            </ul>
+        </section>
+
+        <section class="task-container trash">
+            <h3>Корзина</h3>
+            <ul class="task-list">
+                <li class="task-list-element">Сходить погулять</li>
+                <li class="task-list-element">Прочитать Войну и Мир</li>
+            </ul>
+            <button type="button" class="clear-button">X Очистить</button>
+        </section>
+
+    </section>
+</main>
+</html>
